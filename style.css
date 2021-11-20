@@ -1,0 +1,104 @@
+body{
+  background-color: green;
+ }
+ .bg-info{
+   color:white;
+ }
+
+ 
+ .header {
+     padding: 80px;
+     text-align: center;
+     color: white;
+ }
+  h1{
+     color: white;
+     font-size: 40px;
+     text-align: center;
+ }
+ h4{
+     color :white;
+     text-align: center;
+ }
+ p{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 20px ;
+     text-align: center;
+     color :white;
+ }
+ /* top*/
+ .navbar {
+     overflow: hidden;
+     
+   }
+   
+   .navbar a {
+     float: left;
+     display: black;
+     color: white;
+     text-align: center;
+     padding: 14px 20px;
+     text-decoration: none;
+   }
+  /* right */ 
+   .navbar a.right {
+     float: right;
+   }
+   
+   /* Changing color on hover */
+   .navbar a:hover {
+     background-color:darkgreen;
+     color: black;
+   }
+   
+   /* Column container */
+   .row {  
+     display: flex;
+     flex-wrap: wrap;
+   }
+   
+   .side {
+     flex: 30%;
+     background-color: #fff;
+     padding: 20px;
+     text-decoration-color: black;
+   }
+   
+   /* Main column */
+   .main {   
+     flex: 70%;
+     background-color: white;
+     padding: 20px;
+   }
+   .card-text{
+     color:black;
+     text-indent: 1px;
+   }
+   .card-title{
+     color: darkmagenta;
+
+   }
+ 
+   
+   /* Footer */
+   .footer {
+     padding: 20px;
+     text-align: center;
+     background-color: #004c3f;
+   }
+   
+   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+   @media screen and (max-width: 700px) {
+     .row {   
+       flex-direction: column;
+     }
+   }
+   
+   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+   @media screen and (max-width: 400px) {
+     .navbar a {
+       float: none;
+       width:100%;
+     }
+   }
+ 
